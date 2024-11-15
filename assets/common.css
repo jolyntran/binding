@@ -26,11 +26,12 @@ nav ul{
 
     justify-content: space-between;
     align-items: center;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 #title{
 	padding-top: 4rem;
+
 }
 
 #info{

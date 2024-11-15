@@ -1,7 +1,13 @@
 html{
-	background-color: black;
+	background-color: white;
 	font-family: "Inter";
 	font-weight: 400;
+}
+
+#title{
+	background-color: black;
+	width: 100%; 
+	padding-bottom: 1rem;
 }
 
 h1{
@@ -17,7 +23,7 @@ h1{
 	-webkit-text-stroke: 0px;
 }
 
-#info, #introquote, #paragraphs{
+#info, #introquote{
 	color: white;
 }
 
@@ -45,4 +51,15 @@ h4{
 	font-weight: 700;
 	color: white;
 	margin-top: 1.25rem;
+}
+
+#paragraphs{
+	color: black;
+}
+
+h2{
+	font-family: "Climate Crisis";
+	font-size: 0.875rem;
+	letter-spacing: .01rem;
+	padding-top: 1rem;
 }
