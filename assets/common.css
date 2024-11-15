@@ -17,7 +17,7 @@ nav ul{
     top: 0;
 	left: 0;
 	margin: 0;
-	padding: 1.75rem 1rem;
+	padding: 1rem;
     width: 100vw;
 
 	/* COLORS WILL CHANGE W EACH DIRECTION */
@@ -34,8 +34,8 @@ nav ul{
 
 }
 
-#info{
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+#hamburger-menu{
+	font-size: 3rem;
+	font-weight: 300;
 }
+
