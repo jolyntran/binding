@@ -1,7 +1,48 @@
-p {
-	color: tomato;
+html{
+	background-color: black;
+	font-family: "Inter";
+	font-weight: 400;
 }
 
-body {
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+h1{
+	font-family: "Climate Crisis";
+	-webkit-text-stroke: .05rem white;
+	font-size: 3.82rem;
+	line-height: 4rem;
+	margin-top: 6rem;
+}
+
+.not-italic{
+	color: white;
+	-webkit-text-stroke: 0px;
+}
+
+#info, #introquote, #paragraphs{
+	color: white;
+}
+
+#info{
+	margin-top: 1.825rem;
+	font-size: .825rem;
+}
+
+h3{
+	font-weight: 700;
+	letter-spacing: .01rem;
+}
+
+h4{
+}
+
+#introquote{
+	margin-top: 1.25rem;
+	font-size: 1.125rem;
+	font-weight: 300;
+}
+
+.arrow{
+	font-size: 1.825rem;
+	font-weight: 700;
+	color: white;
+	margin-top: 1.25rem;
 }
