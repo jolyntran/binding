@@ -7,6 +7,10 @@ html{
 #title{
 	background-color: black;
 	padding-bottom: 1rem;
+	padding-left: 1rem;
+	width: 100vw; 
+    position: relative;
+    left: calc(-50vw + 50%);
 }
 
 h1{
@@ -28,9 +32,11 @@ h1{
 
 #info{
 	display: flex;
-	justify-content: space-between;
 	margin-top: 1.825rem;
+	margin-left: .7rem;
 	font-size: .825rem;
+	border-left: 4px solid white;
+	padding-left: 1rem;
 }
 
 h3{

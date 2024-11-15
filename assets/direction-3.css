@@ -1,7 +1,114 @@
-p{
-	color: blue;
+html{
+	background-color: #F9F9F9;
+	font-family: "Inter";
+	font-weight: 400;
+	color: 000814
 }
 
-body {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1{
+	font-family: "Bebas Neue";
+	color: black;
+	font-size: 11rem;
+	line-height: 9rem;
+	text-align: left;
+	margin-top: 3rem;
+}
+
+.arrow{
+	display: none;
+}
+
+.descriptors{
+	display: none;
+}
+
+#info{
+	display: flex;
+	justify-content: space-between;
+	color: black;
+	font-size: 1rem;
+}
+
+#introquote{
+	font-size: 0.875rem;
+    color: black;
+	font-weight: 600;
+	line-height: 1.125rem;
+	text-align: right;
+    max-width: 300px;
+    margin-top: 1rem;
+	margin-right: 1rem;
+	position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 140px;
+}
+
+/* OOOO FUN NOTE FOR LATER BUT MAYBE ANIMATE THE STRIKETHROUGH */
+.not-italic{
+	text-decoration: 0.8rem line-through #FFFF33;
+}
+
+/* ASK FOR HELP ON THIS */
+#author{
+    text-align: left;
+}
+/* THIS TOO */
+#publisher{
+    text-align: right;
+}
+
+#
+
+h2{
+	font-family: "Bebas Neue";
+	font-size: 0.875rem;
+	padding: 1rem;
+	background-color: #FFFF33;
+	color: black;
+	width: 100vw; 
+    position: relative;
+    left: calc(-50vw + 50%);
+}
+
+#block{
+	padding: 1rem;
+	color: white;
+}
+
+#paragraphs{
+	background-color: black;
+	width: 100vw; 
+    position: relative;
+    left: calc(-50vw + 50%);
+}
+
+#paragraphs p{
+	line-height: 1.5rem;
+}
+
+.paragraph{
+	margin-bottom: 2rem;
+}
+
+blockquote {
+	font-family: "Bebas Neue";
+	font-size: 2rem;
+	margin-left: 5rem;
+	margin-bottom: 1.5rem;
+	margin-top: 1rem;
+}
+
+nav ul{
+    background-color: black;
+	color: white;
+}
+
+mark{
+	background-color: #FFFF33;
+	color: black;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin: 1px;
+
 }
