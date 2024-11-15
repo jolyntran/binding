@@ -22,12 +22,7 @@ nav ul{
 	padding: 1rem;
     width: 100vw;
 	z-index: 1;
-
-	/* COLORS WILL CHANGE W EACH DIRECTION */
-    background-color: #000;
-	color: white;
-
-    justify-content: space-between;
+	justify-content: space-between;
     align-items: center;
 	font-weight: 500;
 }
@@ -42,3 +37,6 @@ nav ul{
 	font-weight: 300;
 }
 
+#paragraphs p{
+	padding-bottom: 0.75rem;
+}
