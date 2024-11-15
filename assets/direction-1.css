@@ -16,7 +16,7 @@ html{
 h1{
 	font-family: "Climate Crisis";
 	-webkit-text-stroke: .05rem white;
-	font-size: 3.82rem;
+	font-size: 4.5rem;
 	line-height: 4rem;
 	margin-top: 8rem;
 }
@@ -32,11 +32,15 @@ h1{
 
 #info{
 	display: flex;
+	justify-content: space-around;
 	margin-top: 1.825rem;
-	margin-left: .7rem;
 	font-size: .825rem;
-	border-left: 4px solid white;
-	padding-left: 1rem;
+	border-left: 0.25rem solid white;
+	margin-left: .5rem;
+}
+
+.square{
+	display: none;
 }
 
 h3{

@@ -24,18 +24,14 @@ h1{
 
 #info{
 	display: flex;
+	justify-content: space-between;
 	color: black;
 	font-size: 1rem;
 	padding-bottom: 1rem;
 }
 
-/* ASK FOR HELP ON THIS */
-#author{
-    text-align: left;
-}
-/* THIS TOO */
-#publisher{
-    text-align: right;
+.square{
+	display: none;
 }
 
 #introquote{
