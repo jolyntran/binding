@@ -24,9 +24,18 @@ h1{
 
 #info{
 	display: flex;
-	justify-content: space-between;
 	color: black;
 	font-size: 1rem;
+	padding-bottom: 1rem;
+}
+
+/* ASK FOR HELP ON THIS */
+#author{
+    text-align: left;
+}
+/* THIS TOO */
+#publisher{
+    text-align: right;
 }
 
 #introquote{
@@ -49,20 +58,9 @@ h1{
 	text-decoration: 0.8rem line-through #FFFF33;
 }
 
-/* ASK FOR HELP ON THIS */
-#author{
-    text-align: left;
-}
-/* THIS TOO */
-#publisher{
-    text-align: right;
-}
-
-#
-
 h2{
 	font-family: "Bebas Neue";
-	font-size: 0.875rem;
+	font-size: 1rem;
 	padding: 1rem;
 	background-color: #FFFF33;
 	color: black;
