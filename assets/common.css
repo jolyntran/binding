@@ -1,5 +1,7 @@
 * { 
 	margin-top: .25rem;
+	box-sizing: border-box;
+
 }
 
 :root{
@@ -19,6 +21,7 @@ nav ul{
 	margin: 0;
 	padding: 1rem;
     width: 100vw;
+	z-index: 1;
 
 	/* COLORS WILL CHANGE W EACH DIRECTION */
     background-color: #000;

@@ -1,7 +1,64 @@
-p {
-	color: gold;
+html{
+	background-color: #F9F9F9;
+	font-family: "Inter";
+	font-weight: 400;
+	color: 000814
 }
 
-body {
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+h1{
+	font-family: "Silkscreen";
+	color: #003566;
+	font-size: 5.1rem;
+	line-height: 4.5rem;
+	margin-top: 9rem;
+	-webkit-transform: rotate(-9.55deg);
+}
+
+.arrow{
+	display: none;
+}
+
+.square{
+	height: 42px;
+	width: 42px;
+	background-color: #FFC300;
+	grid-area: square;
+}
+
+.descriptors{
+	display: none;
+}
+
+#info{
+	color: #003566;
+	display: grid;
+	grid-template-columns: 2fr 7fr;
+	grid-template-areas:
+		"square author "
+		"square   publisher";
+	padding-top: 11rem;
+}
+
+#author{
+	grid-area: author;
+	margin-bottom: -.25rem;
+	margin-left: -.5rem;
+}
+
+#publisher{
+	grid-area: publisher;
+	margin-top: -.25rem;
+	margin-left: -.5rem;
+}
+
+#introquote{
+	color: #001D3D;
+	font-size: 1.25rem;
+	position: relative;
+	top: -10rem;
+	font-weight: 500;
+}
+
+hr{
+	border-top: 2px solid #003566;
 }
