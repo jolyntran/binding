@@ -2,12 +2,12 @@ html{
 	background-color: #F9F9F9;
 	font-family: "Inter";
 	font-weight: 400;
-	color: 000814
+	color: #F9F9F9;
 }
 
 h1{
 	font-family: "Bebas Neue";
-	color: black;
+	color: #121212;
 	font-size: 11rem;
 	line-height: 9rem;
 	text-align: left;
@@ -25,7 +25,7 @@ h1{
 #info{
 	display: flex;
 	justify-content: space-between;
-	color: black;
+	color: #121212;
 	font-size: 1rem;
 	padding-bottom: 1rem;
 }
@@ -36,7 +36,7 @@ h1{
 
 #introquote{
 	font-size: 0.875rem;
-    color: black;
+    color: #121212;
 	font-weight: 600;
 	line-height: 1.125rem;
 	text-align: right;
@@ -52,6 +52,8 @@ h1{
 /* OOOO FUN NOTE FOR LATER BUT MAYBE ANIMATE THE STRIKETHROUGH */
 .not-italic{
 	text-decoration: 0.8rem line-through #FFFF33;
+	/* transform: skew(-6deg); */
+
 }
 
 h2{
@@ -59,7 +61,7 @@ h2{
 	font-size: 1rem;
 	padding: 1rem;
 	background-color: #FFFF33;
-	color: black;
+	color: #121212;
 	width: 100vw; 
     position: relative;
     left: calc(-50vw + 50%);
@@ -67,11 +69,11 @@ h2{
 
 #block{
 	padding: 1rem;
-	color: white;
+	color: #F9F9F9;
 }
 
 #paragraphs{
-	background-color: black;
+	background-color: #121212;
 	width: 100vw; 
     position: relative;
     left: calc(-50vw + 50%);
@@ -94,15 +96,14 @@ blockquote {
 }
 
 nav ul{
-    background-color: black;
-	color: white;
+    background-color: #121212;
+	color: #F9F9F9;
 }
 
 mark{
 	background-color: #FFFF33;
-	color: black;
+	color: #121212;
 	padding-left: 3px;
 	padding-right: 3px;
 	margin: 1px;
-
 }
