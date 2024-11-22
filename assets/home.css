@@ -95,13 +95,13 @@ h1{
 .main{
     font-family: var(--heading-font);
     color: var(--primary-color);
-    display: flex;
 }
 
 .aside{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin: 1rem;
 }
 
 .article{
@@ -192,10 +192,15 @@ h1{
     background-color: #d1ca00;
 }
 
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
 .colophon-title{
     font-family: var(--accent-font);
     font-size: 3rem;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
 }
 
 .colophon{
@@ -204,6 +209,8 @@ h1{
     padding: 5rem 2rem;
     background-color: var(--primary-color);
     color: var(--tertiary-color);
+    margin: 1rem;
+    border-radius: 1rem;
 }
 
 .container{
@@ -250,12 +257,6 @@ footer{
 }
 
 @media (min-width: 768px){
-    main.layout{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 1rem;
-    }
-
     .heading{
         margin: 6rem 0rem;
     }
@@ -276,19 +277,29 @@ footer{
         font-weight: 500;
     }
 
-    .main{
-        grid-column: 1fr 2fr; 
-    }
-
     .background{
         font-size: 10rem;
         line-height: 7.5rem;
     }
 
-    .aside{
-        grid-column: 2 / 3; 
-        flex-direction: column; 
-        padding-top: 3rem;
+    .info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: auto; 
+        grid-template-areas: 
+            "colophon colophon aside"
+            "colophon colophon aside"
+            "colophon colophon aside";
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    .colophon {
+        grid-area: colophon;
+    }
+
+    .aside {
+        grid-area: aside;
     }
 
     .article{
