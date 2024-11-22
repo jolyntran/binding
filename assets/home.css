@@ -17,29 +17,28 @@ body{
     min-height: 100vh;
 }
 
-header{
+/* header{
     position: sticky;
     top: 0;
     width: 100%;
     height: 50px;
     line-height: 50px;
     z-index: 1;
-}
+} */
 
-nav ul{
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
-    display: flex;
+/* nav ul{
+	display: flex;
+	position: fixed;
     top: 0;
-    left: 0;
-    margin: 0;
-    padding: 1rem;
+	left: 0;
+	margin: 0;
+	padding: 1rem;
     width: 100vw;
-    justify-content: space-between;
+	z-index: 1;
+	justify-content: space-between;
     align-items: center;
-    font-weight: 500;
-    list-style: none;
-}
+	font-weight: 500;
+} */
 
 .background{
     font-family: var(--heading-font);
@@ -78,6 +77,8 @@ h1{
 
 .responsive{
     font-family: var(--accent-font);
+    color: var(--tertiary-color);
+    text-shadow: 2px 2px 3px var(--primary-color);
     font-size: 4rem;
     background-color: var(--secondary-color);
     padding: 0 1rem;
@@ -195,23 +196,33 @@ h1{
 .info{
     display: flex;
     flex-direction: column;
+    background-color: var(--tertiary-color);
 }
 
 .colophon-title{
     font-family: var(--accent-font);
     font-size: 3rem;
     color: var(--secondary-color);
+    padding-bottom: 2rem;
 }
 
 .colophon{
     font-family: var(--body-font);
     font-size: 1.125rem;
+    line-height: 1.5rem;
     padding: 5rem 2rem;
     background-color: var(--primary-color);
     color: var(--tertiary-color);
     margin: 1rem;
     border-radius: 1rem;
 }
+/* 
+.starburst{
+    background-color:var(--secondary-color);
+    width: 200px; 
+    aspect-ratio: 1;
+    clip-path: polygon(100% 50%,85.21% 57.48%,95.68% 70.34%,79.12% 71.16%,83.46% 87.16%,68% 81.18%,65.45% 97.55%,53.76% 85.8%,44.77% 99.73%,38.88% 84.24%,25% 93.3%,25.91% 76.75%,9.55% 79.39%,17.11% 64.64%,1.09% 60.4%,14% 50%,1.09% 39.6%,17.11% 35.36%,9.55% 20.61%,25.91% 23.25%,25% 6.7%,38.88% 15.76%,44.77% 0.27%,53.76% 14.2%,65.45% 2.45%,68% 18.82%,83.46% 12.84%,79.12% 28.84%,95.68% 29.66%,85.21% 42.52%);
+  } */
 
 .container{
     background-color: var(--primary-color);
