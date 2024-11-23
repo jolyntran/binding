@@ -1,5 +1,5 @@
 :root{
-    --primary-color: #292929;
+    --primary-color: #222222;
     --secondary-color: #f2e22b;
     --tertiary-color: #F9F9F9;
     --heading-font: "Bebas Neue", sans-serif;
@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
     font-family: var(--body-font);
     color: var(--primary-color);
     margin: 0;
@@ -42,8 +42,8 @@ body{
 
 .background{
     font-family: var(--heading-font);
-    color: var(--primary-color);
-    opacity: 3%;
+    color: var(--tertiary-color);
+    opacity: 1%;
     font-size: 6rem;
     line-height: 5rem;
     position: absolute;
@@ -63,13 +63,17 @@ body{
     padding: 1rem;
     position: relative;
     gap: 1rem;
+    border: .25rem solid var(--tertiary-color);
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    /* box-shadow: 2px 4px 16px #00000029; */
 }
 
 h1{
     font-family: var(--heading-font);
     font-size: 3rem;
     line-height: 3rem;
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     text-align: center;
     margin-bottom: 2rem;
     transform: rotate(-4deg);
@@ -88,14 +92,10 @@ h1{
 
 .subheader{
     font-family: var(--body-font);
+    color: var(--tertiary-color);
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
-}
-
-.main{
-    font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
 .aside{
@@ -103,6 +103,7 @@ h1{
     flex-direction: column;
     gap: 1rem;
     margin: 1rem;
+    overflow: visible;
 }
 
 .article{
@@ -110,42 +111,26 @@ h1{
     color: var(--secondary-color);
     font-family: var(--heading-font);
     font-size: 1.875rem;
-    border-radius: 1rem;
     padding: 1rem;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    cursor: pointer;
     outline: none;
+    /* box-shadow: 2px 4px 16px #00000029; */
 }
 
 .article:hover{
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.article:hover .content{
-    opacity: 1;
-    max-height: 400px;
-}
-
-.article:focus-within .content{
-    opacity: 1;
-    max-height: 400px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .content{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
+    opacity: 1; 
+    max-height: none; 
+    overflow: visible; 
 }
 
-.article:focus-within{
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.title-arrow{
+/* .title-arrow{
 	display: flex;
 	justify-content: space-between;
 }
@@ -157,7 +142,7 @@ h1{
     border-right: 10px solid transparent;
     border-top: 10px solid var(--secondary-color);
     margin-top: 1rem;
-  }
+  } */
 
 .author, .summary{
     font-family: var(--body-font);
@@ -174,23 +159,6 @@ h1{
 
 .summary{
     font-size: 0.9rem;
-}
-
-.button{
-    display: inline-block;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    margin: 1rem;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border-radius: 4px;
-    font-size: 0.9rem;
-    text-align: center;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.button:hover{
-    background-color: #d1ca00;
 }
 
 .info{
@@ -214,19 +182,12 @@ h1{
     background-color: var(--primary-color);
     color: var(--tertiary-color);
     margin: 1rem;
-    border-radius: 1rem;
+    /* box-shadow: 2px 4px 16px #00000029; */
 }
-/* 
-.starburst{
-    background-color:var(--secondary-color);
-    width: 200px; 
-    aspect-ratio: 1;
-    clip-path: polygon(100% 50%,85.21% 57.48%,95.68% 70.34%,79.12% 71.16%,83.46% 87.16%,68% 81.18%,65.45% 97.55%,53.76% 85.8%,44.77% 99.73%,38.88% 84.24%,25% 93.3%,25.91% 76.75%,9.55% 79.39%,17.11% 64.64%,1.09% 60.4%,14% 50%,1.09% 39.6%,17.11% 35.36%,9.55% 20.61%,25.91% 23.25%,25% 6.7%,38.88% 15.76%,44.77% 0.27%,53.76% 14.2%,65.45% 2.45%,68% 18.82%,83.46% 12.84%,79.12% 28.84%,95.68% 29.66%,85.21% 42.52%);
-  } */
 
 .container{
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
     display: flex;
     white-space: nowrap;
     width: 100%;
@@ -314,7 +275,6 @@ footer{
     }
 
     .article{
-        cursor: none;
         padding: 2rem 0rem;
     }
 
@@ -323,7 +283,7 @@ footer{
         padding-right: 2rem;
     }
 
-    .arrow{
+    /* .arrow{
         width: 0; 
         height: 0; 
         border-left: 10px solid transparent;
@@ -331,6 +291,6 @@ footer{
         border-top: 10px solid var(--secondary-color);
         margin-top: 1rem;
         margin-right: 2rem;
-      }
+      } */
     
 }
