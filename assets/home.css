@@ -1,7 +1,8 @@
 :root{
-    --primary-color: #222222;
-    --secondary-color: #f2e22b;
+    --primary-color: #00001b;
+    --secondary-color: #ffd628;
     --tertiary-color: #F9F9F9;
+    --blue: #2227f7;
     --heading-font: "Bebas Neue", sans-serif;
     --body-font: "Inter", sans-serif;
     --accent-font: "Sedgwick Ave Display";
@@ -12,6 +13,7 @@ body{
     font-family: var(--body-font);
     color: var(--primary-color);
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -40,13 +42,20 @@ body{
 	font-weight: 500;
 } */
 
+.nav{
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border: .25rem solid var(--tertiary-color);
+}
+
 .background{
     font-family: var(--heading-font);
     color: var(--tertiary-color);
-    opacity: 1%;
+    opacity: 5%;
     font-size: 6rem;
     line-height: 5rem;
-    position: absolute;
+    position: fixed;
     top: 0; 
     left: 0;
     z-index: -1;
@@ -77,14 +86,16 @@ h1{
     text-align: center;
     margin-bottom: 2rem;
     transform: rotate(-4deg);
+    text-shadow: 2px 2px 3px var(--primary-color);
+
 }
 
 .responsive{
     font-family: var(--accent-font);
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     text-shadow: 2px 2px 3px var(--primary-color);
     font-size: 4rem;
-    background-color: var(--secondary-color);
+    background-color: var(--blue);
     padding: 0 1rem;
     position: relative;
     z-index: -1;
@@ -107,19 +118,35 @@ h1{
 }
 
 .article{
+    position: relative;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family: var(--heading-font);
     font-size: 1.875rem;
-    padding: 1rem;
+    padding: 2rem;
     outline: none;
+    overflow: hidden;
     /* box-shadow: 2px 4px 16px #00000029; */
 }
 
 .article:hover{
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--blue);
+    transition: background-color 0.3s ease-in-out;
+    font-family: var(--accent-font);
 }
+
+.article:hover .author, 
+.article:hover .summary {
+    color: var(--primary-color); 
+}
+
+.motif {
+    position: absolute;
+    font-size: 18rem;
+    opacity: 10%;
+    right: 1rem;
+} 
 
 .content{
     display: flex;
@@ -130,19 +157,9 @@ h1{
     overflow: visible; 
 }
 
-/* .title-arrow{
-	display: flex;
-	justify-content: space-between;
-}
-
 .arrow{
-    width: 0; 
-    height: 0; 
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid var(--secondary-color);
-    margin-top: 1rem;
-  } */
+    font-weight: 900;
+}
 
 .author, .summary{
     font-family: var(--body-font);
@@ -171,15 +188,17 @@ h1{
     font-family: var(--accent-font);
     font-size: 3rem;
     color: var(--secondary-color);
-    padding-bottom: 2rem;
+    padding-bottom: 2rem;    
+    padding-top: 2rem;
+
 }
 
 .colophon{
     font-family: var(--body-font);
     font-size: 1.125rem;
     line-height: 1.5rem;
-    padding: 5rem 2rem;
-    background-color: var(--primary-color);
+    padding: 2rem;
+    background-color: var(--blue);
     color: var(--tertiary-color);
     margin: 1rem;
     /* box-shadow: 2px 4px 16px #00000029; */
@@ -268,6 +287,8 @@ footer{
 
     .colophon {
         grid-area: colophon;
+        font-size: 2rem;
+        line-height: 3rem;
     }
 
     .aside {
@@ -283,14 +304,7 @@ footer{
         padding-right: 2rem;
     }
 
-    /* .arrow{
-        width: 0; 
-        height: 0; 
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-top: 10px solid var(--secondary-color);
-        margin-top: 1rem;
-        margin-right: 2rem;
-      } */
-    
+    .motif{
+        top: .5rem;
+    }
 }
