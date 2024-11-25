@@ -79,6 +79,15 @@ h1{
     text-align: center;
 }
 
+.article-header{
+    font-family: var(--accent-font);
+    color: var(--blue);
+    font-size: 5rem;
+    padding: 1rem 1rem 0rem 1rem;
+    text-align: center;
+    text-shadow: 2px 2px 3px var(--secondary-color);
+}
+
 .aside{
     display: flex;
     flex-direction: column;
@@ -111,7 +120,7 @@ h1{
     color: var(--primary-color); 
 }
 
-.motif {
+.motif{
     position: absolute;
     font-size: 18rem;
     opacity: 10%;
@@ -160,18 +169,15 @@ h1{
     color: var(--secondary-color);
     padding-bottom: 1rem;    
     padding-top: 2rem;
-
 }
 
 .colophon{
     font-family: var(--body-font);
     font-size: 1.125rem;
     line-height: 1.5rem;
-    padding: 2rem;
+    padding: 5rem 2rem;
     background-color: var(--blue);
     color: var(--tertiary-color);
-    margin: 1rem;
-    /* box-shadow: 2px 4px 16px #00000029; */
 }
 
 .container{
@@ -261,14 +267,32 @@ footer{
 
     .info{
         display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        grid-template-rows: auto; 
+        grid-template-columns: 2fr 2fr 1fr; 
+        grid-template-rows: auto auto auto; 
         grid-template-areas: 
-            "colophon colophon aside"
-            "colophon colophon aside"
-            "colophon colophon aside";
+            "aside aside aside article-header"
+            "aside aside aside article-header"
+            "aside aside aside article-header";
         gap: 1rem;
         padding: 2rem;
+        margin: 0rem 0rem 0rem 30rem;
+    }
+
+    .info-colophon{
+        background-color: var(--tertiary-color);
+    }
+
+    .article-header{
+        grid-area: article-header;
+        writing-mode: vertical-rl; 
+        font-family: var(--accent-font);
+        font-size: 10rem;
+        color: var(--blue);
+        text-align: center; 
+        align-self: stretch; 
+        justify-self: center; 
+        padding: 0;
+        line-height: 1;
     }
 
     .colophon-title{
@@ -284,10 +308,11 @@ footer{
 
     .aside{
         grid-area: aside;
+        margin: 0;
     }
 
     .article{
-        padding: 2rem 0rem;
+        padding: 1rem 0rem;
     }
 
     .title, .content{
@@ -296,6 +321,8 @@ footer{
     }
 
     .motif{
-        top: .5rem;
+        top: 2;
+        font-size: 15rem;
+
     }
 }
