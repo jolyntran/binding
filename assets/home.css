@@ -304,6 +304,7 @@ footer{
         grid-area: colophon;
         font-size: 1.25rem;
         line-height: 2rem;
+        padding-left: 10rem;
     }
 
     .aside{
@@ -312,13 +313,18 @@ footer{
     }
 
     .article{
-        padding: 1rem 0rem;
+        padding: 3rem 0rem;
     }
 
     .title, .content{
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
+    .summary{
+        line-height: 1.25rem;
+    }
+
 
     .motif{
         top: 2;
