@@ -1,7 +1,7 @@
 :root{
     --primary-color: #00001b;
     --secondary-color: #ffd628;
-    --tertiary-color: #F9F9F9;
+    --tertiary-color: #fafaf3;
     --blue: #2227f7;
     --heading-font: "Bebas Neue", sans-serif;
     --body-font: "Inter", sans-serif;
@@ -85,7 +85,7 @@ h1{
     font-size: 5rem;
     padding: 1rem 1rem 0rem 1rem;
     text-align: center;
-    text-shadow: 2px 2px 3px var(--secondary-color);
+    text-shadow: 2px 2px 3px var(--primary-color);
 }
 
 .aside{
@@ -180,6 +180,12 @@ h1{
     color: var(--tertiary-color);
 }
 
+mark{
+    color: var(--secondary-color);
+    font-family: var(--accent-font);
+    font-weight: 100;
+}
+
 .container{
     background-color: var(--tertiary-color);
     color: var(--primary-color);
@@ -212,15 +218,16 @@ h1{
 }
 
 footer{
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
     width: 100vw;
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer{
+.footer-left, .footer-right{
+    color: var(--tertiary-color);
+    font-family: var(--heading-font);
     margin: 2rem;
-    margin-bottom: 10rem;
-
 }
 
 @media (min-width: 768px){
@@ -233,6 +240,7 @@ footer{
         font-family: var(--heading-font);
         padding: 1.5rem;
         transition: color 0.3s ease, transform 0.3s ease;
+        position: fixed;
     }
     
     .home:hover, .nav-item-1:hover, .nav-item-2:hover, .nav-item-3:hover{
@@ -275,7 +283,7 @@ footer{
             "aside aside aside article-header";
         gap: 1rem;
         padding: 2rem;
-        margin: 0rem 0rem 0rem 30rem;
+        margin: 0rem 10rem;
     }
 
     .info-colophon{
@@ -304,7 +312,8 @@ footer{
         grid-area: colophon;
         font-size: 1.25rem;
         line-height: 2rem;
-        padding-left: 10rem;
+        padding: 10rem 20rem;
+        border: .25rem solid;
     }
 
     .aside{
@@ -321,10 +330,13 @@ footer{
         padding-right: 2rem;
     }
 
-    .summary{
-        line-height: 1.25rem;
+    .title{
+        font-size: 4rem;
     }
 
+    .summary{
+        line-height: 1.5rem;
+    }
 
     .motif{
         top: 2;
