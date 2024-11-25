@@ -19,36 +19,6 @@ body{
     min-height: 100vh;
 }
 
-/* header{
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    z-index: 1;
-} */
-
-/* nav ul{
-	display: flex;
-	position: fixed;
-    top: 0;
-	left: 0;
-	margin: 0;
-	padding: 1rem;
-    width: 100vw;
-	z-index: 1;
-	justify-content: space-between;
-    align-items: center;
-	font-weight: 500;
-} */
-
-.nav{
-    color: var(--tertiary-color);
-    background-color: var(--primary-color);
-    padding: 2rem;
-    border: .25rem solid var(--tertiary-color);
-}
-
 .background{
     font-family: var(--heading-font);
     color: var(--tertiary-color);
@@ -185,10 +155,10 @@ h1{
 }
 
 .colophon-title{
-    font-family: var(--accent-font);
-    font-size: 3rem;
+    font-family: var(--heading-font);
+    font-size: 2rem;
     color: var(--secondary-color);
-    padding-bottom: 2rem;    
+    padding-bottom: 1rem;    
     padding-top: 2rem;
 
 }
@@ -252,6 +222,22 @@ footer{
         margin: 6rem 0rem;
     }
 
+    .nav{
+        font-size: 2rem;
+        font-family: var(--heading-font);
+        padding: 1.5rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .home:hover, .nav-item-1:hover, .nav-item-2:hover, .nav-item-3:hover{
+        color: var(--secondary-color);
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .layout{
+        padding-top: 3rem;
+    }
+
     h1{
         font-size: 8rem;
         line-height: 8rem;
@@ -273,7 +259,7 @@ footer{
         line-height: 7.5rem;
     }
 
-    .info {
+    .info{
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: auto; 
@@ -285,13 +271,18 @@ footer{
         padding: 2rem;
     }
 
-    .colophon {
-        grid-area: colophon;
-        font-size: 2rem;
-        line-height: 3rem;
+    .colophon-title{
+        font-size: 5rem;
+        padding-bottom: 2rem;
     }
 
-    .aside {
+    .colophon{
+        grid-area: colophon;
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    .aside{
         grid-area: aside;
     }
 
