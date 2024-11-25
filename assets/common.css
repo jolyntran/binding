@@ -53,14 +53,19 @@ nav ul{
         transition: color 0.3s ease, transform 0.3s ease;
     }
 
+	.home{
+		border-right: solid .25rem var(--primary-color);
+		padding-right: 20rem;
+	}
+
 	.nav-item-1:hover{
 		font-style: italic;
 	}
 
 	.nav-item-2:hover{
-		text-decoration: underline double .25rem;
+		text-decoration: line-through .25rem;
 	}
 
 	.nav-item-3:hover{
-		text-decoration: underline double .25rem;
+		text-decoration: underline double;
 	}
