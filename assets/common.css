@@ -15,8 +15,15 @@
 }
 
 body{
+    background-color: var(--tertiary-color);
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 	font-size: var(--base-size);
-	padding: var(--base-size);
 }
 
 nav ul{
@@ -45,6 +52,24 @@ nav ul{
 
 #paragraphs p{
 	padding-bottom: 0.75rem;
+}
+
+footer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+	background-color: var(--primary-color);
+}
+
+.footer-left, .footer-right{
+    color: var(--tertiary-color);
+    font-family: var(--heading-font);
+    margin: 2rem;
+}
+
+.footer-right{
+    text-align: right;
 }
 
 @media (min-width: 768px){
