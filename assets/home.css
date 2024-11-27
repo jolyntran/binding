@@ -123,18 +123,13 @@ h1{
 
 .motif{
     font-size: 4rem;
-    padding: 0rem 1rem 0rem 2rem;
+    padding-left: 2rem;
 }
 
 .content {
     display: flex;
     gap: 0.5rem; 
 }
-
-.article-details{
-
-}
-
 
 .arrow{
     font-weight: 900;
@@ -281,7 +276,7 @@ footer{
 
     .title{
         font-size: 5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.25rem;
     }
 
     .author{
