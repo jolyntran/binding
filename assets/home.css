@@ -30,10 +30,10 @@ body{
     font-size: 6rem;
     line-height: 5rem;
     position: fixed;
-    top: 0; 
+    top: 0;
     left: 0;
     z-index: -1;
-    word-break: break-word; 
+    word-break: break-word;
 }
 
 .heading{
@@ -49,7 +49,6 @@ body{
     border-bottom: .1rem solid var(--tertiary-color);
     font-family: var(--heading-font);
     color: var(--primary-color);
-    /* box-shadow: 2px 4px 16px #00000029; */
 }
 
 h1{
@@ -61,7 +60,6 @@ h1{
     margin-bottom: 2rem;
     transform: rotate(-4deg);
     text-shadow: 2px 2px 3px var(--primary-color);
-
 }
 
 .responsive{
@@ -83,15 +81,6 @@ h1{
     text-align: center;
 }
 
-/* .article-header{
-    font-family: var(--accent-font);
-    color: var(--blue);
-    font-size: 5rem;
-    padding: 1rem 1rem 0rem 1rem;
-    text-align: center;
-    text-shadow: 2px 2px 3px var(--primary-color);
-} */
-
 .info-colophon{
     margin: 0;
 }
@@ -105,16 +94,15 @@ h1{
 }
 
 .article{
-    position: relative;
+    display: flex;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family: var(--heading-font);
     font-size: 1.875rem;
-    padding: 2rem;
-    outline: none;
-    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     margin-top: .1rem;
-    /* box-shadow: 2px 4px 16px #00000029; */
 }
 
 .article:hover{
@@ -124,49 +112,54 @@ h1{
     font-family: var(--accent-font);
 }
 
-.article:hover .author, 
-.article:hover .summary {
-    color: var(--primary-color); 
+.article:hover .author, .article:hover .summary{
+    color: var(--primary-color);
+}
+
+.title{
+    font-size: 1.75rem;
+    line-height: 2.5rem;
 }
 
 .motif{
-    position: absolute;
-    font-size: 10rem;
-    opacity: 10%;
-    right: 1rem;
-    top: 1;
-} 
-
-.content{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    overflow: visible; 
+    font-size: 4rem;
+    padding: 0rem 1rem 0rem 2rem;
 }
+
+.content {
+    display: flex;
+    gap: 0.5rem; 
+}
+
+.article-details{
+
+}
+
 
 .arrow{
     font-weight: 900;
 }
 
-.author, .summary{
+/* .author, .summary{
     font-family: var(--body-font);
     color: var(--tertiary-color);
     margin-left: 1rem;
     margin-right: 1rem;
-}
+} */
 
 .author{
+    font-family: var(--body-font);
+    color: var(--tertiary-color);
     font-size: 1rem;
     font-style: italic;
-    /* opacity: 75%; */
     margin: 0;
 }
 
-.summary{
+/* .summary{
     font-size: 0.9rem;
     line-height: 1.25rem;
     display: none;
-}
+} */
 
 .colophon-title{
     font-family: var(--heading-font);
@@ -184,22 +177,14 @@ h1{
     margin: 0;
     background-color: var(--blue);
     color: var(--tertiary-color);
-    /* border-right: .25rem solid var(--tertiary-color);
-    border-left: .25rem solid var(--tertiary-color); */
     border-bottom: .1rem solid var(--tertiary-color);
 }
-
-/* mark{
-    color: var(--secondary-color);
-    font-family: var(--accent-font);
-    font-weight: 100;
-} */
 
 .colophon:hover .colophon-title{
     font-family: var(--accent-font);
 }
 
-.colophon:hover mark {
+.colophon:hover mark{
     color: var(--secondary-color);
     font-family: var(--accent-font);
     font-weight: 100;
@@ -213,7 +198,7 @@ h1{
     width: 100%;
     height: clamp(3em, 10vw, 6em);
     overflow: hidden;
-    font-family: var(--heading-font)
+    font-family: var(--heading-font);
 }
 
 .loop-text{
@@ -224,20 +209,15 @@ h1{
 }
 
 .loop-text{
-    animation: loopText 10s infinite linear;      
+    animation: loopText 10s infinite linear;
 }
 
 @keyframes loopText{
-  from{
-      transform: translateX(0);
-   }
-  to{
-      transform: translateX(-100%);
-   }
+    from{transform: translateX(0);}
+    to{transform: translateX(-100%);}
 }
 
 footer{
-    /* background-color: var(--primary-color); */
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -266,27 +246,25 @@ footer{
         transition: color 0.3s ease, transform 0.3s ease;
         position: fixed;
     }
-    
+
     .home:hover, .nav-item-1:hover, .nav-item-2:hover, .nav-item-3:hover{
         color: var(--secondary-color);
         transition: color 0.3s ease, transform 0.3s ease;
     }
 
-    .layout{
-        padding-top: 3rem;
-    }
+    .layout{padding-top: 3rem;}
 
     h1{
         font-size: 8rem;
         line-height: 8rem;
         margin-bottom: 2rem;
     }
-    
+
     .responsive{
         font-size: 11rem;
         padding: 0 2rem;
     }
-    
+
     .subheader{
         font-size: 2rem;
         font-weight: 500;
@@ -297,36 +275,33 @@ footer{
         line-height: 7.5rem;
     }
 
-    .info{
-        /* display: grid;
-        grid-template-columns: 1fr 2fr 2fr; 
-        grid-template-rows: auto auto auto; 
-        grid-template-areas: 
-            "article-header aside aside aside"
-            "article-header aside aside aside"
-            "article-header aside aside aside"; */
+    .article-details{
+        padding: 3rem;
+    } 
+
+    .title{
+        font-size: 5rem;
+        margin-bottom: 1rem;
     }
 
-    .info-colophon{
-        background-color: var(--primary-color);
+    .author{
+        font-size: 1.5rem;
     }
 
-    /* .article-header{
-        grid-area: article-header;
-        font-family: var(--accent-font);
-        font-size: 2rem;
-        color: var(--blue);
-        padding: 0;
-        line-height: 1;
+    /* .summary{
+        line-height: 1.725rem;
+        font-size: 1.1rem;
     } */
 
+    .motif{
+        font-size: 10rem;
+    }
+
     .colophon{
-        grid-area: colophon;
         display: flex;
         font-size: 1.25rem;
         line-height: 2rem;
         padding: 7rem 10rem;
-        /* border: .25rem solid; */
     }
 
     .colophon-title{
@@ -336,37 +311,5 @@ footer{
 
     .colophon-summary{
         padding-left: 7rem;
-    }
-
-    /* .aside{
-        grid-area: aside;
-        margin: 0;
-    } */
-
-    .article{
-        padding: 3rem;
-    }
-
-    .title, .content{
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .title{
-        font-size: 4rem;
-    }
-
-    .author{
-        font-size: 1.5rem; 
-    }
-
-    .summary{
-        line-height: 1.725rem;
-        font-size: 1.1rem;
-    }
-
-    .motif{
-        top: 5;
-        font-size: 15rem;
     }
 }

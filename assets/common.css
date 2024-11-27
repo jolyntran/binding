@@ -55,7 +55,6 @@ nav ul{
 
 	.home{
 		border-right: solid .1rem var(--primary-color);
-		padding-right: 20rem;
 	}
 
 	.nav-item-1:hover{
