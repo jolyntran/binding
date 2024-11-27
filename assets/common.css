@@ -1,11 +1,17 @@
 * { 
 	margin-top: .25rem;
 	box-sizing: border-box;
-
 }
 
 :root{
 	--base-size: 16px;
+    --primary-color: #00001b;
+    --secondary-color: #ffd628;
+    --tertiary-color: #fafaf3;
+    --blue: #2227f7;
+    --heading-font: "Bebas Neue", sans-serif;
+    --body-font: "Inter", sans-serif;
+    --accent-font: "Sedgwick Ave Display";
 }
 
 body{

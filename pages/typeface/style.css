@@ -1,16 +1,12 @@
-:root{
-	--primary-color: #292929;
-	--secondary-color: #f2e22b;
-	--tertiary-color: #F9F9F9;
-	--heading-font: "Bebas Neue";
-	--body-font: "Inter";
-}
-
 html{
 	background-color: var(--tertiary-color);
 	font-family: var(--body-font);
 	font-weight: 400;
 	color: var(--tertiary-color);
+}
+
+.nav-item-3{
+    color: var(--secondary-color);
 }
 
 h1{
