@@ -29,7 +29,7 @@ nav ul{
 	justify-content: space-between;
     align-items: center;
 	font-weight: 500;
-	border: .25rem solid var(--tertiary-color);
+	border-bottom: .1rem solid var(--tertiary-color);
 }
 
 #title{
@@ -54,7 +54,7 @@ nav ul{
     }
 
 	.home{
-		border-right: solid .25rem var(--primary-color);
+		border-right: solid .1rem var(--primary-color);
 		padding-right: 20rem;
 	}
 
@@ -69,3 +69,4 @@ nav ul{
 	.nav-item-3:hover{
 		text-decoration: underline double;
 	}
+}
