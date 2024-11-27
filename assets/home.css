@@ -59,13 +59,13 @@ h1{
     text-align: center;
     margin-bottom: 2rem;
     transform: rotate(-4deg);
-    text-shadow: 2px 2px 3px var(--primary-color);
+    /* text-shadow: 2px 2px 3px var(--primary-color); */
 }
 
 .responsive{
     font-family: var(--accent-font);
     color: var(--secondary-color);
-    text-shadow: 2px 2px 3px var(--primary-color);
+    /* text-shadow: 2px 2px 3px var(--primary-color); */
     font-size: 4rem;
     background-color: var(--blue);
     padding: 0 1rem;
@@ -112,12 +112,12 @@ h1{
     font-family: var(--accent-font);
 }
 
-.article:hover .author, .article:hover .summary{
+.article:hover .author{
     color: var(--primary-color);
 }
 
 .title{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
 }
 
