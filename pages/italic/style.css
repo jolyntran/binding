@@ -76,52 +76,11 @@ h2{
 	padding: 1rem;
 }
 
-/* OOOO FUN NOTE FOR LATER BUT MAYBE ANIMATE THE STRIKETHROUGH */
 .not-italic{
     position: relative;
     display: inline-block;
 	font-family: var(--heading-font);
-}
-
-.not-italic:before,
-.not-italic:after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 0.8rem;
-    top: 40%;
-}
-
-.not-italic:before {
-    left: 0;
-}
-
-.not-italic:after {
-    right: 0;
-    background: var(--secondary-color);
-    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.not-italic:hover:before {
-    background: var(--secondary-color);
-    width: 100%;
-    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.not-italic:hover:after {
-    background: transparent;
-    width: 100%;
-    transition: 0s;
-}
-
-/* .not-italic:hover {
-    color: var(--blue); 
-    font-family: var(--accent-font); 
-} */
-
-.not-italic:focus{
-    color: var(--secondary-color); /* Change text color when focused */
-    font-family: var(--accent-font); /* Change to accent font when focused */
+	text-decoration: line-through var(--secondary-color);
 }
 
 #block{
@@ -191,4 +150,51 @@ mark{
 	padding-left: 3px;
 	padding-right: 3px;
 	margin: 1px;
+}
+
+
+@media (min-width: 1024px){
+	.not-italic{
+		text-decoration: none;
+	}
+	.not-italic:before,
+	.not-italic:after {
+		content: "";
+		position: absolute;
+		width: 0%;
+		height: 0.8rem;
+		top: 40%;
+	}
+
+	.not-italic:before {
+		left: 0;
+	}
+
+	.not-italic:after {
+		right: 0;
+		background: var(--secondary-color);
+		transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+	}
+
+	.not-italic:hover:before {
+		background: var(--secondary-color);
+		width: 100%;
+		transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+	}
+
+	.not-italic:hover:after {
+		background: transparent;
+		width: 100%;
+		transition: 0s;
+	}
+
+	/* .not-italic:hover {
+		color: var(--blue); 
+		font-family: var(--accent-font); 
+	} */
+
+	.not-italic:focus{
+		color: var(--secondary-color); /* Change text color when focused */
+		font-family: var(--accent-font); /* Change to accent font when focused */
+	}
 }
