@@ -246,8 +246,8 @@ mark{
 	}
 
 	h1{
-		font-size: 11rem;
-		line-height: 10rem;
+		font-size: 13rem;
+		line-height: 13rem;
 		text-align: bottom;
 		margin-top: 4rem;
 		margin-left: 1rem;
@@ -264,14 +264,14 @@ mark{
 	#info{
 		display: flex;
 		justify-content: space-between;
-		color: var(--primary-color);
 		font-size: 1.25rem;
 		padding-top: 7rem;
 		margin: 0rem 1rem;
 	}
 	
-	#publisher{
+	#author, #publisher{
 		margin-right: 2.25rem;
+		color: var(--tertiary-color)
 	}
 
 	.square{
