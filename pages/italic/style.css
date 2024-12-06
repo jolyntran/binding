@@ -299,8 +299,32 @@ mark{
 	margin: 1px;
 }
 
+@media (min-width: 756px) {
+    .all-content{
+		display: flex;
+	}
+
+	.header{
+		max-width: 50%;
+	}
+}
 
 @media (min-width: 1024px){
+	.all-content{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"header paragraphs"
+	}
+
+	header{
+		grid-area: header;
+	}
+
+	#paragraphs{
+		grid-area: paragraphs;
+	}
+
 	.not-italic{
 		text-decoration: none;
 	}
@@ -341,7 +365,7 @@ mark{
 	} */
 
 	.not-italic:focus{
-		color: var(--secondary-color); /* Change text color when focused */
-		font-family: var(--accent-font); /* Change to accent font when focused */
+		color: var(--secondary-color); 
+		font-family: var(--accent-font); 
 	}
 }
