@@ -22,7 +22,7 @@ header{
 .background{
     font-family: var(--heading-font);
     color: var(--tertiary-color);
-    opacity: 5%;
+    opacity: 10%;
     font-size: 6rem;
     line-height: 5rem;
     position: fixed;
