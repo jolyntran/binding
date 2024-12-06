@@ -295,6 +295,10 @@ mark{
 }
 
 @media (min-width: 756px){
+	.background{
+		z-index: -2;
+	}
+
 	header, #paragraphs{
         height: 100%;
 		width: 50%;
@@ -326,6 +330,7 @@ mark{
 	}
 
 	.example, .soap-example, .fyl-example, .arabic-example{
+		font-weight: 500;
 		margin: 2rem 4rem;
 	}
 
@@ -335,12 +340,14 @@ mark{
 		font-weight: 500;
 	}
 
-}
+	footer{
+		z-index: 1;
+	}
 
-@media (min-width: 1024px){
 	.not-italic{
 		text-decoration: none;
 	}
+	
 	.not-italic:before,
 	.not-italic:after {
 		content: "";
@@ -381,4 +388,5 @@ mark{
 		color: var(--secondary-color); 
 		font-family: var(--accent-font); 
 	}
+
 }
