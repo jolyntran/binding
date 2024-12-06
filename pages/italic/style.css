@@ -325,6 +325,16 @@ mark{
 		margin-left: 10rem;
 	}
 
+	.example, .soap-example, .fyl-example, .arabic-example{
+		margin: 2rem 4rem;
+	}
+
+	.example:hover, .soap-example:hover, .fyl-example:hover, .arabic-example:hover{
+		background-color: var(--secondary-color);
+		color: var(--blue);
+		font-weight: 500;
+	}
+
 }
 
 @media (min-width: 1024px){
