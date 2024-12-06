@@ -407,6 +407,7 @@ mark{
 	h2{
 		font-size: 1rem;
 		padding: 1rem;
+		z-index: 1;
 	}
 	
 	.not-italic{
