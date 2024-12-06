@@ -291,6 +291,7 @@ mark{
 	}
 
 	.code{
-		color: var(--primary-color)
+		color: var(--primary-color); 
+		font-family:'Courier New', Courier, monospace;
 	}
 }
