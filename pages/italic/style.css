@@ -291,6 +291,10 @@ mark{
 	#introquote{
 		top:20rem; 
 	}
+
+	.nav{
+		z-index: 10;
+	}
 }
 
 @media (min-width: 983px){
@@ -309,9 +313,12 @@ mark{
         top: 0;
     }
       
+	.nav{
+		z-index: 10;
+	}
+
     #paragraphs{
         margin-left: 50%;
-		z-index: -1;
     }
 
 	#paragraphs p{
@@ -369,7 +376,7 @@ mark{
 		margin-left: 1rem;
 	}
 	
-	.arrow{1
+	.arrow{
 		display: none;
 	}
 	
