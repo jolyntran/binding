@@ -281,7 +281,18 @@ mark{
 	margin: 1px;
 }
 
-@media (min-width: 756px){
+@media (min-width: 593px) and (max-width: 983px){
+	h1{
+		font-size: 8rem;
+		line-height: 8rem;
+	}	
+
+	#introquote{
+		top:20rem; 
+	}
+}
+
+@media (min-width: 983px){
 	.background{
 		z-index: -2;
 	}
@@ -350,7 +361,7 @@ mark{
 
 	h1{
 		font-size: 11rem;
-		line-height: 10rem;
+		line-height: 9rem;
 		text-align: bottom;
 		margin-top: 4rem;
 		margin-left: 1rem;
@@ -388,7 +399,7 @@ mark{
 		margin: 0; 
 		padding: 0; 
 		position: absolute;
-		top: 34rem; 
+		top:40rem; 
 		left: 1rem; 
 		width: 30rem;
 	}
@@ -449,5 +460,23 @@ mark{
 	#introquote mark{
 		font-weight: 600;
 	}
+}
 
+@media (min-width: 1151px){
+	#introquote{
+		font-size: 1.5rem;
+		line-height: 2rem;
+		text-align: left; 
+		margin: 0; 
+		padding: 0; 
+		position: absolute;
+		top:34rem; 
+		left: 1rem; 
+		width: 30rem;
+	}
+
+	h1{
+		font-size: 12rem;
+		line-height: 11rem;
+	}
 }
