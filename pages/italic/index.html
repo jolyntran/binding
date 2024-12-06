@@ -36,7 +36,7 @@
                             </section>
                     </section> 
                     <section class="title">
-                        <h1>ITALIC <span class="not-italic" tabindex="0">not italic</span></h1>
+                        <h1><div class="italic">ITALIC </div><span class="not-italic" tabindex="0">not italic</span></h1>
                     </section> 
                     <section id="introquote">“You should start making italics if you want people to buy your fonts, <br><mark>Friendly advice.”</mark></section>
                     <section class="arrow">&#x2193;</section><hr>
@@ -70,39 +70,44 @@
                         <p>It is strange how Marinetti, in his call for revolution against “the Poetry Book,” doesn’t see any problem with italics. Somehow, Roman numerals are an issue, but the use of a highly decorative imitation of 16th-century handwriting is a futuristic expression, not part of the “typographic harmony” ensemble. It is even stranger that he doesn’t address the application of italic itself, as his idea of highlighting the page with “3-4 colors and 20 different typefaces” is very close to how the use of italic is regulated in the Chicago Manual. The only difference is: where Marinetti suggests “20 different typefaces,” Chicago suggests only one — italic. <mark>So, seemingly, to achieve Marinetti’s idea, all that is needed is to diversify the means of text highlighting.</mark> And it’s not like there are no alternative typographic traditions, which could be used to substitute the italic.</p>
                         
                         <blockquote>“The book must be the futuristic expression of our futuristic thought.”</blockquote>
-
+                    </section>
                         <section class="example">
                             <p>For example, while nowadays all foreign text is highlighted in italic, in the days of Latin as the international language of Europe, a different combination was often used — Roman for Latin and blackletter for vernacular German:</p>
-                            
-                            <p class="german">Gefunden, dab gegen die febiger dagegen <span class="roman">Militaire</span> fie fenen <span class="roman">Officiers</span>, fie Gemeine nach Unter oderge.</p>
+                            <section class="nested">
+                                <p class="german">Gefunden, dab gegen die febiger dagegen <span class="roman">Militaire</span> fie fenen <span class="roman">Officiers</span>, fie Gemeine nach Unter oderge.</p>
+                            </section>
                         </section>
 
                         <section class="example">
                             <p>In general, blackletter tradition offers a great variety of text highlighting techniques that don’t use italic (for an obvious reason — there is no italic in blackletter):</p>
-                            
-                            <p class="german">Die <span class="german-bold">Orgel</span>, der flugel, das <span class="german-bold">fortepiano</span>, und das <span class="german-bold">Clavicord</span></p>
-
+                            <section class="nested">
+                                <p class="german">Die <span class="german-bold">Orgel</span>, der flugel, das <span class="german-bold">fortepiano</span>, und das <span class="german-bold">Clavicord</span></p>
+                            </section>
                             <p>For example, a combination of two different blackletters may be used or Bold styles can complement the “Regular.”</p> 
                         </section>
                         
                         <section class="example">
-                            <p class="german">Dahin gehoret, <span class="german-bigger">die nom formirte hochloblichen</span> Confiftorio des Serkogthums</p>
-                                
+                            <section class="nested">
+                                <p class="german">Dahin gehoret, <span class="german-bigger">die nom formirte hochloblichen</span> Confiftorio des Serkogthums</p>
+                            </section>
                             <p>Sometimes you can find a mix of two different type sizes in one text (in this case, with a mix of two different sizes for Roman as well).</p> 
                         </section>
 
                         <section class="example">
-                            <p class="german-wide">Langens Oefamt: Uusgaben</p>
-                                
+                            <section class="nested">
+                                <p class="german-wide">Langens Oefamt: Uusgaben</p>
+                            </section>    
                             <p>But probably the most common technique to encounter is the “sperrsatz” (wide letterspacing).</p> 
                         </section>  
 
                         <section class="example">
-                            <p class="russian">дайте мне <span class="sperrsatz">хорошую</span>степень</p>
-
+                            <section class="nested">
+                                <p class="russian">дайте мне <span class="sperrsatz">хорошую</span> степень</p>
+                            </section>
                             <p>Sperrsatz is also a technique often found in Soviet publications (presumably, due to the fact that it was easier to space the type than switch to a separate italic case).</p>
                         </section>
 
+                    <section id="block">
                         <p>So, it is rather natural that the designers of Bauhaus, coming from a blackletter-dominant German typographic tradition, seem to be the first ones to start practicing italicless typesetting within modern Western typography. <mark>Their magazine, Bauhaus, did not have any italics, but instead applied a variety of other techniques</mark> (rather similar to blackletter examples mentioned above).</p>
                         
                         <p>In rare cases — underline. Almost everywhere — sperrsat. Bold (often in combination with sperrsatz). And even bigger type sizes were used.
@@ -126,9 +131,10 @@
                         <p><mark>Sans serifs have italics nowadays just as often (read: always) as serif typefaces, but for sans serifs, slanted (oblique) styles are often used instead of true italics.</mark> It is hard to say who exactly was the first to come up with the idea that slanted (oblique) would be more befitting for the neutrality of Swiss Modernism, but it is well possible that the trend was set by the most successful modernist sans serif — Helvetica. Helvetica’s oblique style instead of true italic makes perfect sense from a certain point of view — <mark>why would a typeface that represents modernity and objectivity have a style that imitates handwriting?</mark> Of course, slanted makes more sense. Though the bigger question is: why is a typeface that represents modernity and objectivity trying to imitate the calligraphic lean-in at all?</p>
 
                         <p>There are a lot of arguments in favor of “true italics” and against oblique/slanted styles. Especially the mechanically slanted fonts are disliked for their distorted outlines:</p>
+                    </section>
 
-                        <section class="example">
-                            <p class="soap-1">SOAP</p>
+                        <section class="soap-example">
+                            <p><span class="soap-1">SOAP</p>
                             <p>Roman</p>
                             <p class="soap-2">SOAP</p>
                             <p>Slanted — no correction (fake italics)</p>
@@ -136,6 +142,7 @@
                             <p>True italics — with optical correction</p>
                         </section>
 
+                    <section id="block">
                         <p>From Mark Simonson’s Fake vs. True Italics article: “Notice how the curves have become distorted. The subtle modulation of the stroke weight is thrown completely out of whack, getting thinner in some places and thicker in others. This is especially noticeable with the S, O, and P. Notice how the O looks kind of squashed. The A is also affected, but the difference is less obvious: the left stroke has become slightly thinner while the right stroke has become slightly thicker.”</p>
 
                         <p>But wouldn’t exactly the mechanical distortion (and a noticeable one) be most befitting for a modernist typeface, typeface of the machine world?</p>
@@ -143,20 +150,21 @@
                         <blockquote>“Why would a typeface that represents modernity and objectivity have a style that imitates handwriting?”</blockquote>
 
                         <p>And what about geometric grotesks? Typefaces whose design is entirely based on simple geometric shapes — circles, rectangles, triangles. What sense does it make to try to play off a slanted by eleven degrees oval as a basic geometric shape? <mark>If anything, the logical solution for an italic style of geometric grotesk would be not a slant, but rotation.</mark> This was the thought behind the new “italic” style of Five Years Later, FYL Rotated:</p>
+                    </section>
 
-                        <section class="example">
-                            <p>Five Years Later Regular</p>
+                        <section class="fyl-example">
                             <p class="poppins">AaBbCc</p>
-                            <p>Five Years Later Rotated</p>
+                            <p>Five Years Later Regular</p>
                             <p><span class="rotated">A</span><span class="rotated">a</span><span class="rotated">B</span><span class="rotated">b</span><span class="rotated">C</span><span class="rotated">c</span></p>
+                            <p>Five Years Later Rotated</p>
                         </section>
 
+                    <section id="block">
                         <p>Rotation has a very interesting effect on Latin alphabet. In theory, rotating letters sound like a simple and natural thing to do, but you won’t find Rotate characters function in InDesign for a reason (and very, very rarely will you find a “rotated” typeface). Character rotation is unnatural for Latin typography, as it defies two fundamental concepts of Latin typesetting: the baseline and the intercharacter spacing system of a proportional typeface.</p>
 
                         <p>First, the baseline: if you decide to rotate the characters in a line of text, what should become the center of rotation? If you try to align the letters to the baseline by their lowest points, they would appear jumping up and down (depending on their widths) and even bigger problem would be dealing with ascenders and descenders (since, for example, the descender of “p” might not even touch the baseline). And how should the capitals be placed in relation to the lowercase in a rotated font? I would be lying to say that FYL Rotated provides any answers to these questions, as the characters are simply aligned by eye. The vertical alignment is based on what makes the best sense visually, but there is no system behind it.</p>
 
                         <p>Adjusting metrics/kerning of the rotated typeface is an even bigger issue: instead of usual exercise of solving the familiar spacing puzzle of vertical, oval and diagonal shapes (finding the optimal metrics to balance the character pairs like “nn”, “no”, “oo”, “on”, “nv”, “vn”, “ov”, “vo”, “vv”, etc.), <mark>you are presented with innumerable amount of spacing combinations and the only good solution here is, probably, to go one step back and adapt the lettershapes themselves for the new rotated conditions.</mark> Maybe, it will be done one day, but for now FYL Rotated tries to fix the spacing issue with an uninventive bruteforce of 4462 (class-)kerning pairs.</p>
-                        </p>
                     </section>
                 </section>
                 <section class="paragraph">
@@ -172,23 +180,25 @@
                         <p>In the case of right-to-left writing systems (Arabic and Hebrew), this forced slant presents a curious question: in which direction should the text be slanted (considering that there is some reason to slant the text in the first place)?</p>
                         
                         <p>It is natural for italic text to lean forward. <mark>Which way is forward, though?</mark> In case of Arabic and Hebrew, “forward” is left, the opposite of Latin way, so the angle of Arabic Italic should be the opposite of Latin Italic.</p>
-                        
-                        <section class="example">
-                            <p>Normal</p>
-                            <p>أعطني درجة جيدة</p>
-                            <p>Italic</p>
+                    </section>
+
+                        <section class="arabic-example">
                             <p class="arabic">أعطني درجة جيدة</p>
-                            <p>Adobe Arabic, published by Adobe, leans right.</p>
+                            <p>Normal</p>
+                            <p class="arabic-right">أعطني درجة جيدة</p>
+                            <p>Adobe Arabic leans right.</p>
                             <p class="arabic-left">أعطني درجة جيدة</p>
-                            <p>While Sada, published by Arabetics, leans left.</p>
+                            <p>While Sada leans left.</p>
                         </section>
 
+                    <section id="block">
                         <p>According to Wikipedia, In the 1950s, Gholamhossein Mosahab invented the Iranic font style, a back-slanted italic form to go with the right-to-left direction of the script. It is a curious concept. Indeed, if we have a style that leans right, wouldn’t a style that leans left also be useful in some occasional worldwide applications? And apart from the whole Right-to-Left/Left-to-Right consideration, wouldn’t it be nice to have a greater variety of different italics just for purely aesthetic/expressive reasons? Maybe the Marinetti’s Revolution should be not mere «4 colors and 20 typefaces, but 4 colors and 20 typefaces with a dozen of different “italics” each?<p>For example, italic for emphasis and iranic for irony?</p>
                         
                         <p>With these considerations in mind, four new styles were designed for Panama: Monospace Italic, Monospace Iranic, Proportional Italic and Proportional Iranic (as in the case of straight cuts, proportional versions use the same outlines/letterforms as the monospace ones, only the spacing is different).
                         </p>    
                         
                         <blockquote>“If we have a style that leans right, wouldn’t a style that leans left also be useful in some occasional worldwide applications?”</blockquote>
+                    </section>
                     </section>
                 </section>       
             </section>
