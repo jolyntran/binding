@@ -1,19 +1,41 @@
 html{
-	background-color: var(--tertiary-color);
+	/* background-color: var(--tertiary-color);
 	font-family: var(--body-font);
 	font-weight: 400;
-	color: var(--tertiary-color);
+	color: var(--tertiary-color); */
+}
+
+body{
+	background-color: var(--primary-color);
 }
 
 .nav-item-2{
     color: var(--secondary-color);
 }
 
+header{
+	margin: 1rem;
+	display: flex;
+    flex-direction: column;
+}
+
+.background{
+    font-family: var(--heading-font);
+    color: var(--tertiary-color);
+    opacity: 3%;
+    font-size: 6rem;
+    line-height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    word-break: break-word;
+}
+
 h1{
 	font-family: var(--heading-font);
-	color: var(--primary-color);
-	font-size: 11rem;
-	line-height: 9rem;
+	color: var(--tertiary-color);
+	font-size: 10rem;
+	line-height: 8.5rem;
 	text-align: left;
 	margin-top: 3rem;
 }
@@ -29,7 +51,7 @@ h1{
 #info{
 	display: flex;
 	justify-content: space-between;
-	color: var(--primary-color);
+	color: var(--tertiary-color);
 	font-size: 1rem;
 	padding-top: 1rem;
 }
@@ -38,50 +60,24 @@ h1{
 	display: none;
 }
 
-#introquote{
-	font-size: 0.875rem;
-    color: var(--primary-color);
-	font-weight: 600;
-	line-height: 1.125rem;
-	text-align: right;
-    max-width: 300px;
-    margin-top: 1rem;
-	margin-right: 1rem;
-	position: absolute;
-    right: 0;
-    top: 21rem;
-    width: 140px;
-}
-
-/* OOOO FUN NOTE FOR LATER BUT MAYBE ANIMATE THE STRIKETHROUGH */
-.not-italic{
-	text-decoration: 0.8rem line-through var(--secondary-color);
-	/* transform: skew(-6deg); */
-
-}
-
 h2{
-	font-family: var(--heading-font);
 	font-size: 1rem;
 	padding: 1rem;
 }
 
 #block{
 	padding: 1rem;
-	color: var(--tertiary-color);
+	color: var(--primary-color);
+	font-weight: 500;
 }
 
 .subheading{
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--secondary-color);
-	color: var(--primary-color);
+	background-color: var(--blue);
+	color: var(--tertiary-color);
 	width: 100vw; 
-    position: relative;
     left: calc(-50vw + 50%);
-}
-
-.subheading{
 	border-bottom: none;
 	position: -webkit-sticky;
 	position: sticky;
@@ -89,27 +85,72 @@ h2{
 }
 
 #paragraphs{
-	background-color: var(--primary-color);
+	background-color: var(--tertiary-color);
 	width: 100vw; 
     position: relative;
     left: calc(-50vw + 50%);
-}
-
-#paragraphs p{
-	line-height: 1.5rem;
 }
 
 .paragraph{
 	margin-bottom: 2rem;
 }
 
-blockquote {
-	font-family: var(--heading-font);
-	font-size: 2rem;
-	margin-left: 5rem;
-	margin-bottom: 1.5rem;
+.example,.example-2{
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	padding: 1rem;
+	font-weight: 400;
 	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
+
+#block p{
+	line-height: 1.5rem;
+}
+
+/* FONT CHANGES */
+.TNR{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1.6rem;
+	color: var(--blue);
+}
+
+.TOR{
+	font-family: "EB Garamond";
+	font-size: 1.6rem;
+	color: var(--blue);
+}
+
+.cicero{
+	font-family: "Averia Serif Libre";
+	font-size: 3rem;
+	color: var(--blue);
+	padding-top:1rem;
+}
+
+.plantin{
+	font-family: "Baskervville";
+	font-size: 3rem;
+	color: var(--blue);
+}
+
+.TNR-2{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 3rem;
+	color: var(--blue);
+}
+/* END OF FONT CHANGES */
+
+blockquote{
+	color: var(--primary-color);
+	font-family: var(--heading-font);
+}
+
+/* blockquote:hover{
+	transition: color 0.5s ease-in-out;
+	font-family: var(--accent-font);
+	color: var(--secondary-color);
+} */
 
 nav ul{
     background-color: var(--primary-color);
@@ -127,10 +168,181 @@ nav ul{
 }
 
 mark{
-	background-color: var(--secondary-color);
-	color: var(--primary-color);
+	background-color: var(--blue);
+	color: var(--secondary-color);
 	font-weight: 500;
 	padding-left: 3px;
 	padding-right: 3px;
 	margin: 1px;
+}
+
+@media (min-width: 756px){
+	.background{
+		z-index: -2;
+	}
+
+	header, #paragraphs{
+        height: 100%;
+		width: 50%;
+    }
+ 
+    header{
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+      
+    #paragraphs{
+        margin-left: 50%;
+    }
+
+	#paragraphs p{
+        padding: 1rem;
+    }
+
+	.subheading{
+        width: 100%; 
+		font-weight: 600;
+	}
+
+	blockquote{
+		font-size: 2.25rem;
+		margin-left: 10rem;
+	}
+
+	.example, .soap-example, .fyl-example, .arabic-example{
+		font-weight: 500;
+		margin: 2rem 4rem;
+	}
+
+	.example:hover, .soap-example:hover, .fyl-example:hover, .arabic-example:hover{
+		background-color: var(--secondary-color);
+		color: var(--blue);
+		font-weight: 500;
+		transition: background-color 0.5s ease-out;
+
+	}
+
+	.german,.roman,.german-bold,.german-bigger,.german-wide,.russian,.sperrsatz,.soap-1,.soap-2,.soap-3,.poppins,.rotated,.arabic,.arabic-right,.arabic-left{
+		color: var(--blue);
+		text-align: center;
+	}
+
+	.chinese{
+		text-align: center;
+
+	}
+
+	.rotation {
+		display: flex; 
+		justify-content: center; 
+	}
+	
+
+	footer{
+		z-index: 1;
+	}
+
+	h1{
+		font-size: 11rem;
+		line-height: 10rem;
+		text-align: bottom;
+		margin-top: 4rem;
+		margin-left: 1rem;
+	}
+	
+	.arrow{1
+		display: none;
+	}
+	
+	.descriptors{
+		display: none;
+	}
+	
+	#info{
+		display: flex;
+		justify-content: space-between;
+		color: var(--primary-color);
+		font-size: 1.25rem;
+		padding-top: 7rem;
+		margin: 0rem 1rem;
+	}
+	
+	#publisher{
+		margin-right: 2.25rem;
+	}
+
+	.square{
+		display: none;
+	}
+	
+	#introquote{
+		font-size: 1.5rem;
+		line-height: 2rem;
+		text-align: left; 
+		margin: 0; 
+		padding: 0; 
+		position: absolute;
+		top: 34rem; 
+		left: 1rem; 
+		width: 30rem;
+	}
+	
+	h2{
+		font-size: 1rem;
+		padding: 1rem;
+	}
+	
+	.not-italic{
+		position: relative;
+		display: inline-block;
+		font-family: var(--heading-font);
+		text-decoration: line-through var(--secondary-color);
+	}
+
+	.not-italic{
+		text-decoration: none;
+	}
+
+	.not-italic:before,
+	.not-italic:after {
+		content: "";
+		position: absolute;
+		width: 0%;
+		height: 0.8rem;
+		top: 40%;
+	}
+
+	.not-italic:before {
+		left: 0;
+	}
+
+	.not-italic:after {
+		right: 0;
+		background: var(--secondary-color);
+		transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+	}
+
+	.not-italic:hover:before {
+		background: var(--secondary-color);
+		width: 100%;
+		transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+	}
+
+	.not-italic:hover:after {
+		background: transparent;
+		width: 100%;
+		transition: 0s;
+	}
+
+
+	.not-italic:focus{
+		color: var(--blue); 
+		font-family: var(--accent-font); 
+	}
+
+	#introquote mark{
+		font-weight: 600;
+	}
+
 }
