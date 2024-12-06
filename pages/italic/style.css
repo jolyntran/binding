@@ -74,7 +74,6 @@ h1{
 h2{
 	font-size: 1rem;
 	padding: 1rem;
-	z-index: 1;
 }
 
 .not-italic{
@@ -262,6 +261,7 @@ nav ul{
     background-color: var(--primary-color);
 	color: var(--tertiary-color);
 	padding: 2rem;
+	z-index: 1;
 }
 
 .article-links{
@@ -408,7 +408,6 @@ mark{
 	h2{
 		font-size: 1rem;
 		padding: 1rem;
-		z-index: 1;
 	}
 	
 	.not-italic{
