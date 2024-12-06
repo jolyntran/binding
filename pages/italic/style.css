@@ -240,17 +240,7 @@ h2{
     line-height: 1.5rem; 
 }
 
-.soap-example{
-	line-height: 3rem; 
-	padding-top: 2.5rem;
-}
-
-.fyl-example{
-	line-height: 3rem; 
-	padding-top: 2.5rem;
-}
-
-.arabic-example{
+.soap-example, .fyl-example, .arabic-example{
 	line-height: 3rem; 
 	padding-top: 2.5rem;
 }
@@ -347,7 +337,7 @@ mark{
 	.not-italic{
 		text-decoration: none;
 	}
-	
+
 	.not-italic:before,
 	.not-italic:after {
 		content: "";
