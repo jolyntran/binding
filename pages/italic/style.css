@@ -62,7 +62,7 @@ h1{
 	font-weight: 600;
 	line-height: 1.125rem;
 	text-align: right;
-    max-width: 300px;
+    /* max-width: 300px; */
     margin-top: 1rem;
 	margin-right: 1rem;
 	position: absolute;
@@ -216,7 +216,7 @@ h2{
 	font-style: italic;
 	color: var(--secondary-color);
 	font-size: 2.5rem;
-	margin: 2rem;
+	margin: 2rem 0rem;
 }
 
 .arabic{
@@ -294,7 +294,6 @@ mark{
 		width: 50%;
     }
  
-      
     header{
         position: fixed;
         left: 0;
@@ -328,10 +327,85 @@ mark{
 		background-color: var(--secondary-color);
 		color: var(--blue);
 		font-weight: 500;
+		transition: background-color 0.5s ease-out;
+
 	}
+
+	.german,.roman,.german-bold,.german-bigger,.german-wide,.russian,.sperrsatz,.soap-1,.soap-2,.soap-3,.poppins,.rotated,.arabic,.arabic-right,.arabic-left{
+		color: var(--blue);
+		text-align: center;
+	}
+
+	.chinese{
+		text-align: center;
+
+	}
+
+	.rotation {
+		display: flex; 
+		justify-content: center; 
+	}
+	
 
 	footer{
 		z-index: 1;
+	}
+
+	h1{
+		font-size: 11rem;
+		line-height: 10rem;
+		text-align: bottom;
+		margin-top: 4rem;
+		margin-left: 1rem;
+	}
+	
+	.arrow{1
+		display: none;
+	}
+	
+	.descriptors{
+		display: none;
+	}
+	
+	#info{
+		display: flex;
+		justify-content: space-between;
+		color: var(--primary-color);
+		font-size: 1.25rem;
+		padding-top: 7rem;
+		margin: 0rem 1rem;
+	}
+	
+	#publisher{
+		margin-right: 2.25rem;
+	}
+
+	.square{
+		display: none;
+	}
+	
+	#introquote{
+		font-size: 1.5rem;
+		line-height: 2rem;
+		text-align: left; 
+		margin: 0; 
+		padding: 0; 
+		position: absolute;
+		top: 34rem; 
+		left: 1rem; 
+		width: 30rem;
+	}
+	
+	h2{
+		font-size: 1rem;
+		padding: 1rem;
+	}
+	
+	.not-italic{
+		position: relative;
+		display: inline-block;
+		font-family: var(--heading-font);
+		text-decoration: line-through var(--secondary-color);
 	}
 
 	.not-italic{
@@ -369,14 +443,14 @@ mark{
 		transition: 0s;
 	}
 
-	/* .not-italic:hover {
-		color: var(--blue); 
-		font-family: var(--accent-font); 
-	} */
 
 	.not-italic:focus{
-		color: var(--secondary-color); 
+		color: var(--blue); 
 		font-family: var(--accent-font); 
+	}
+
+	#introquote mark{
+		font-weight: 600;
 	}
 
 }
