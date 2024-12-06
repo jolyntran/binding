@@ -253,7 +253,7 @@ blockquote{
 blockquote:hover{
 	transition: color 0.5s ease-in-out;
 	font-family: var(--accent-font);
-	color: var(--secondary-color);
+	color: #5c7ef8;
 }
 
 nav ul{

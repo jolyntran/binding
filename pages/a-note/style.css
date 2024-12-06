@@ -22,7 +22,7 @@ header{
 .background{
     font-family: var(--heading-font);
     color: var(--tertiary-color);
-    opacity: 3%;
+    opacity: 5%;
     font-size: 6rem;
     line-height: 5rem;
     position: fixed;
@@ -34,10 +34,14 @@ header{
 h1{
 	font-family: var(--heading-font);
 	color: var(--tertiary-color);
-	font-size: 10rem;
-	line-height: 8.5rem;
+	font-size: 9rem;
+	line-height: 8.25rem;
 	text-align: left;
 	margin-top: 3rem;
+}
+
+.note{
+	text-decoration: underline var(--blue);
 }
 
 .arrow{
@@ -96,12 +100,13 @@ h2{
 }
 
 .example,.example-2{
-	background-color: var(--secondary-color);
-	color: var(--primary-color);
-	padding: 1rem;
-	font-weight: 400;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
 }
 
 #block p{
@@ -146,11 +151,11 @@ blockquote{
 	font-family: var(--heading-font);
 }
 
-/* blockquote:hover{
+blockquote:hover{
 	transition: color 0.5s ease-in-out;
 	font-family: var(--accent-font);
 	color: var(--secondary-color);
-} */
+}
 
 nav ul{
     background-color: var(--primary-color);
@@ -210,34 +215,31 @@ mark{
 		margin-left: 10rem;
 	}
 
-	.example, .soap-example, .fyl-example, .arabic-example{
+	.example, .example-2{
 		font-weight: 500;
 		margin: 2rem 4rem;
 	}
 
-	.example:hover, .soap-example:hover, .fyl-example:hover, .arabic-example:hover{
-		background-color: var(--secondary-color);
-		color: var(--blue);
+	.example:hover, .example-2:hover{
+		background-color: var(--blue);
+		color: var(--tertiary-color);
 		font-weight: 500;
 		transition: background-color 0.5s ease-out;
 
 	}
 
-	.german,.roman,.german-bold,.german-bigger,.german-wide,.russian,.sperrsatz,.soap-1,.soap-2,.soap-3,.poppins,.rotated,.arabic,.arabic-right,.arabic-left{
-		color: var(--blue);
+	.TNR, .TOR, .cicero, .plantin, .TNR-2{
+		color: var(--secondary-color);
 		text-align: center;
+		font-size: 5rem;
 	}
 
-	.chinese{
+	.TNR, .TOR{
+		color: var(--secondary-color);
 		text-align: center;
-
+		font-size: 2.5rem;
+		line-height: 10rem;
 	}
-
-	.rotation {
-		display: flex; 
-		justify-content: center; 
-	}
-	
 
 	footer{
 		z-index: 1;
@@ -276,73 +278,8 @@ mark{
 		display: none;
 	}
 	
-	#introquote{
-		font-size: 1.5rem;
-		line-height: 2rem;
-		text-align: left; 
-		margin: 0; 
-		padding: 0; 
-		position: absolute;
-		top: 34rem; 
-		left: 1rem; 
-		width: 30rem;
-	}
-	
 	h2{
 		font-size: 1rem;
 		padding: 1rem;
 	}
-	
-	.not-italic{
-		position: relative;
-		display: inline-block;
-		font-family: var(--heading-font);
-		text-decoration: line-through var(--secondary-color);
-	}
-
-	.not-italic{
-		text-decoration: none;
-	}
-
-	.not-italic:before,
-	.not-italic:after {
-		content: "";
-		position: absolute;
-		width: 0%;
-		height: 0.8rem;
-		top: 40%;
-	}
-
-	.not-italic:before {
-		left: 0;
-	}
-
-	.not-italic:after {
-		right: 0;
-		background: var(--secondary-color);
-		transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-	}
-
-	.not-italic:hover:before {
-		background: var(--secondary-color);
-		width: 100%;
-		transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-	}
-
-	.not-italic:hover:after {
-		background: transparent;
-		width: 100%;
-		transition: 0s;
-	}
-
-
-	.not-italic:focus{
-		color: var(--blue); 
-		font-family: var(--accent-font); 
-	}
-
-	#introquote mark{
-		font-weight: 600;
-	}
-
 }
